@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corrida 2D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+
+  <div class="container">
+    <h1>Jogo de Corrida 2D</h1>
+    <button id="startButton">Iniciar / Reiniciar</button>
+    <div class="race-track">
+      <div id="playerCar" class="car"></div>
+    </div>
+    <div class="mobile-controls">
+      <button onclick="movePlayerCar({key: 'ArrowLeft'})">←</button>
+      <button onclick="movePlayerCar({key: 'ArrowRight'})">→</button>
+    </div>
+
+    <div class="controls">
+      <p id="raceTime">Tempo de Corrida: 0s</p>
+      <p id="gameOver" class="hidden">Game Over!</p>
+      </div>
+
+      <div id="score">Pontuação: 0</div>
+    <div class="controls">
+        <input type="range" id="offsetSlider" min="0" max="100" value="30">
+        <span id="offsetValue">60px</span>
+      </div>
+   
+
+  </div>
+    
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    width: 600px;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  .race-track {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url('road.gif'); /* <- sua imagem da pista */
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .car {
+    width: 60px;
+    height: 105px;
+    position: absolute;
+    bottom: 0;
+    background-image: url('car_image.png'); /* <- imagem do seu carro */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  
+  .obstacle {
+    width: 60px;
+    height: 105px;
+    position: absolute;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  #raceTime {
+    font-size: 20px;
+  }
+  
+  #gameOver {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  #offsetSlider {
+    width: 300px;
+    margin-top: 10px;
+  }
+  #offsetValue {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  #score {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #d80808;
+  }
+
+  .mobile-controls {
+    display: none;
+    margin-top: 1px;
+  }
+  .mobile-controls button {
+    font-size: 32px;
+    padding: 15px 25px;
+    margin: 0 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.1s ease;
+  }
+  
+  @media (max-width: 700px) {
+    .mobile-controls {
+      display: block;
+    }
+  }
+
+  .mobile-controls {
+    display: block;
+  }
+
+ 
+  #startButton {
+    margin-top: 20px;
+    padding: 1px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  #startButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  #startButton:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  }
+  
